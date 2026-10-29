@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rantai Transpor Elektron - Metabolisme Sel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-icon">⚡</span>
+            <span class="nav-title">Transpor Elektron</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Beranda</a></li>
+            <li><a href="#overview" class="nav-link">Gambaran Umum</a></li>
+            <li><a href="#stages" class="nav-link">Tahapan</a></li>
+            <li><a href="#animation" class="nav-link">Animasi</a></li>
+            <li><a href="#summary" class="nav-link">Ringkasan</a></li>
+            <li><a href="#quiz" class="nav-link">Kuis</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Biologi — Metabolisme Sel</span>
+            <h1 class="hero-title">
+                Rantai Transpor
+                <span class="gradient-text">Elektron</span>
+            </h1>
+            <p class="hero-subtitle">
+                Pelajari bagaimana elektron berenergi tinggi berpindah melalui serangkaian 
+                kompleks protein di membran dalam mitokondria untuk menghasilkan 
+                <strong>ATP</strong> — mata uang energi kehidupan.
+            </p>
+            <div class="hero-buttons">
+                <a href="#overview" class="btn btn-primary">Mulai Belajar</a>
+                <a href="#animation" class="btn btn-secondary">Lihat Animasi</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">34</span>
+                    <span class="stat-label">ATP Dihasilkan</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Kompleks Protein</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">NADH Digunakan</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">FADH₂ Digunakan</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll ke bawah</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ============ OVERVIEW SECTION ============ -->
+    <section class="section overview" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pendahuluan</span>
+                <h2 class="section-title">Apa Itu Rantai Transpor Elektron?</h2>
+                <p class="section-subtitle">
+                    Tahap akhir dari respirasi aerob yang terjadi di membran dalam mitokondria
+                </p>
+            </div>
+
+            <div class="overview-grid">
+                <!-- Card 1 -->
+                <div class="info-card" data-animate="fade-up">
+                    <div class="card-icon">🔬</div>
+                    <h3>Definisi</h3>
+                    <p>
+                        Rantai Transpor Elektron (ETC) adalah serangkaian reaksi redoks 
+                        di mana elektron berenergi tinggi dipindahkan dari NADH dan FADH₂ 
+                        melalui kompleks protein menuju oksigen sebagai akseptor elektron terakhir.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="info-card" data-animate="fade-up" data-delay="1">
+                    <div class="card-icon">📍</div>
+                    <h3>Lokasi</h3>
+                    <p>
+                        Terjadi di <strong>membran dalam mitokondria</strong> (krista). 
+                        Membran ini memiliki luas permukaan yang besar dan mengandung 
+                        kompleks protein yang diperlukan untuk transpor elektron.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="info-card" data-animate="fade-up" data-delay="2">
+                    <div class="card-icon">🎯</div>
+                    <h3>Tujuan</h3>
+                    <p>
+                        Menghasilkan <strong>ATP</strong> dalam jumlah besar melalui proses 
+                        fosforilasi oksidatif. Dari satu molekul glukosa, ETC menghasilkan 
+                        sekitar <strong>34 ATP</strong>.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="info-card" data-animate="fade-up" data-delay="3">
+                    <div class="card-icon">⚗️</div>
+                    <h3>Reaktan & Produk</h3>
+                    <p>
+                        <strong>Masuk:</strong> NADH, FADH₂, O₂, ADP + Pi<br>
+                        <strong>Keluar:</strong> NAD⁺, FAD, H₂O, ATP
+                    </p>
+                </div>
+            </div>
+
+            <!-- Diagram Posisi ETC dalam Respirasi Sel -->
+            <div class="respiration-flow" data-animate="fade-up">
+                <h3 class="flow-title">Posisi ETC dalam Respirasi Sel</h3>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="flow-circle">1</div>
+                        <h4>Glikolisis</h4>
+                        <p>Sitoplasma</p>
+                        <span class="flow-atp">2 ATP</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-circle">2</div>
+                        <h4>Dekarboksilasi Oksidatif</h4>
+                        <p>Matriks Mitokondria</p>
+                        <span class="flow-atp">0 ATP</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-circle">3</div>
+                        <h4>Siklus Krebs</h4>
+                        <p>Matriks Mitokondria</p>
+                        <span class="flow-atp">2 ATP</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step active">
+                        <div class="flow-circle">4</div>
+                        <h4>Transpor Elektron</h4>
+                        <p>Membran Dalam Mitokondria</p>
+                        <span class="flow-atp">34 ATP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STAGES SECTION ============ -->
+    <section class="section stages" id="stages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tahapan</span>
+                <h2 class="section-title">Kompleks Protein dalam ETC</h2>
+                <p class="section-subtitle">
+                    Elektron melewati 4 kompleks protein utama dan 2 pembawa elektron bergerak
+                </p>
+            </div>
+
+            <!-- Kompleks I -->
+            <div class="stage-card" data-animate="slide-right">
+                <div class="stage-number">I</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Kompleks I — NADH Dehidrogenase</h3>
+                        <span class="stage-tag">NADH → NAD⁺ + H⁺ + 2e⁻</span>
+                    </div>
+                    <p>
+                        NADH menyumbangkan 2 elektron berenergi tinggi ke Kompleks I. 
+                        Energi dari transfer elektron ini digunakan untuk <strong>memompa 4 ion H⁺</strong> 
+                        dari matriks ke ruang intermembran. NADH dioksidasi menjadi NAD⁺ yang 
+                        kemudian dapat digunakan kembali dalam siklus Krebs.
+                    </p>
+                    <div class="stage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Donor Elektron</span>
+                            <span class="detail-value">NADH</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">H⁺ Dipompa</span>
+                            <span class="detail-value">4 H⁺</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Penerima</span>
+                            <span class="detail-value">Ubiquinon (CoQ)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kompleks II -->
+            <div class="stage-card" data-animate="slide-left">
+                <div class="stage-number">II</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Kompleks II — Suksinat Dehidrogenase</h3>
+                        <span class="stage-tag">FADH₂ → FAD + 2H⁺ + 2e⁻</span>
+                    </div>
+                    <p>
+                        FADH₂ menyumbangkan 2 elektron ke Kompleks II. Berbeda dengan Kompleks I, 
+                        <strong>Kompleks II tidak memompa H⁺</strong> melintasi membran. Inilah mengapa 
+                        FADH₂ menghasilkan lebih sedikit ATP dibanding NADH. Kompleks II juga merupakan 
+                        bagian dari siklus Krebs (enzim suksinat dehidrogenase).
+                    </p>
+                    <div class="stage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Donor Elektron</span>
+                            <span class="detail-value">FADH₂</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">H⁺ Dipompa</span>
+                            <span class="detail-value">0 H⁺</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Penerima</span>
+                            <span class="detail-value">Ubiquinon (CoQ)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ubiquinon -->
+            <div class="stage-card carrier" data-animate="fade-up">
+                <div class="stage-number carrier-icon">🔄</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Ubiquinon (Koenzim Q / CoQ)</h3>
+                        <span class="stage-tag carrier-tag">Pembawa Elektron Bergerak</span>
+                    </div>
+                    <p>
+                        Ubiquinon adalah molekul kecil yang larut dalam lemak dan bergerak bebas 
+                        di dalam membran. Ia mengumpulkan elektron dari Kompleks I dan II, 
+                        lalu <strong>menyerahkannya ke Kompleks III</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kompleks III -->
+            <div class="stage-card" data-animate="slide-right">
+                <div class="stage-number">III</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Kompleks III — Sitokrom bc₁</h3>
+                        <span class="stage-tag">CoQH₂ → CoQ + 2H⁺ + 2e⁻</span>
+                    </div>
+                    <p>
+                        Kompleks III menerima elektron dari Ubiquinon (CoQH₂) dan mentransfernya 
+                        ke Sitokrom c. Proses ini menghasilkan energi yang digunakan untuk 
+                        <strong>memompa 4 ion H⁺</strong> ke ruang intermembran melalui mekanisme 
+                        yang disebut <em>Q cycle</em>.
+                    </p>
+                    <div class="stage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Donor Elektron</span>
+                            <span class="detail-value">Ubiquinol (CoQH₂)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">H⁺ Dipompa</span>
+                            <span class="detail-value">4 H⁺</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Penerima</span>
+                            <span class="detail-value">Sitokrom c</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sitokrom c -->
+            <div class="stage-card carrier" data-animate="fade-up">
+                <div class="stage-number carrier-icon">🔄</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Sitokrom c</h3>
+                        <span class="stage-tag carrier-tag">Pembawa Elektron Bergerak</span>
+                    </div>
+                    <p>
+                        Sitokrom c adalah protein kecil yang larut dalam air dan terletak 
+                        di ruang intermembran. Ia membawa elektron satu per satu dari 
+                        <strong>Kompleks III ke Kompleks IV</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kompleks IV -->
+            <div class="stage-card" data-animate="slide-left">
+                <div class="stage-number">IV</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>Kompleks IV — Sitokrom c Oksidase</h3>
+                        <span class="stage-tag">4e⁻ + 4H⁺ + O₂ → 2H₂O</span>
+                    </div>
+                    <p>
+                        Kompleks IV adalah perhentian terakhir elektron. Di sini, elektron 
+                        digabungkan dengan <strong>oksigen (O₂)</strong> dan ion H⁺ untuk 
+                        membentuk <strong>air (H₂O)</strong>. Inilah mengapa kita membutuhkan 
+                        oksigen untuk bernapas! Kompleks IV juga memompa 2 ion H⁺.
+                    </p>
+                    <div class="stage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Donor Elektron</span>
+                            <span class="detail-value">Sitokrom c</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">H⁺ Dipompa</span>
+                            <span class="detail-value">2 H⁺</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Akseptor Akhir</span>
+                            <span class="detail-value">O₂ → H₂O</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ATP Synthase -->
+            <div class="stage-card atp-synthase" data-animate="fade-up">
+                <div class="stage-number atp-icon">⚡</div>
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <h3>ATP Sintase (Kompleks V)</h3>
+                        <span class="stage-tag atp-tag">ADP + Pi → ATP</span>
+                    </div>
+                    <p>
+                        Gradien H⁺ yang terbentuk (gaya proton-motif) mendorong ion H⁺ kembali 
+                        ke matriks melalui ATP Sintase. Energi dari aliran H⁺ ini memutar 
+                        bagian rotor ATP Sintase seperti turbin, yang mengkatalisis pembentukan 
+                        <strong>ATP dari ADP dan fosfat anorganik (Pi)</strong>. Proses ini 
+                        disebut <em>kemiosmosis</em>.
+                    </p>
+                    <div class="stage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Mekanisme</span>
+                            <span class="detail-value">Kemiosmosis</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">H⁺ Dibutuhkan</span>
+                            <span class="detail-value">~4 H⁺ per ATP</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Produk</span>
+                            <span class="detail-value">~34 ATP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ANIMATION SECTION ============ -->
+    <section class="section animation-section" id="animation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Interaktif</span>
+                <h2 class="section-title">Animasi Transpor Elektron</h2>
+                <p class="section-subtitle">
+                    Jelajahi setiap tahap transfer elektron secara zoom-in — lihat detail perpindahan elektron dan proton!
+                </p>
+            </div>
+
+            <div class="animation-wrapper" data-animate="fade-up">
+
+                <!-- ===== TOP: Overview minimap ===== -->
+                <div class="anim-overview">
+                    <h4 class="anim-overview-title">🗺️ Peta Keseluruhan Rantai Transpor Elektron</h4>
+                    <div class="minimap-container">
+                        <canvas id="minimapCanvas" width="900" height="140"></canvas>
+                        <!-- Zoom indicator on minimap -->
+                        <div class="minimap-zoom-box" id="minimapZoomBox"></div>
+                    </div>
+                </div>
+
+                <!-- ===== MAIN: Split layout — Canvas + Explanation ===== -->
+                <div class="anim-main">
+
+                    <!-- LEFT: Zoomed-in Canvas -->
+                    <div class="anim-canvas-side">
+                        <div class="zoom-badge" id="zoomBadge">🔍 Tampilan Keseluruhan</div>
+                        <div class="canvas-container">
+                            <canvas id="etcCanvas" width="800" height="520"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Explanation Panel -->
+                    <div class="anim-explain-side" id="explainPanel">
+                        <div class="explain-step-badge" id="explainBadge">Langkah 0 / 6</div>
+                        <h3 class="explain-title" id="explainTitle">Selamat Datang!</h3>
+                        <p class="explain-desc" id="explainDesc">
+                            Klik <strong>"Langkah Berikutnya"</strong> atau gunakan tombol navigasi 
+                            untuk melihat proses transfer elektron tahap demi tahap. 
+                            Setiap tahap akan di-<em>zoom</em> ke bagian yang aktif.
+                        </p>
+
+                        <!-- Detail bullets -->
+                        <div class="explain-details" id="explainDetails">
+                            <div class="explain-detail-item">
+                                <span class="detail-dot electron-dot"></span>
+                                <span>Lingkaran kuning = <strong>Elektron (e⁻)</strong></span>
+                            </div>
+                            <div class="explain-detail-item">
+                                <span class="detail-dot proton-dot"></span>
+                                <span>Lingkaran hijau = <strong>Proton (H⁺)</strong></span>
+                            </div>
+                            <div class="explain-detail-item">
+                                <span class="detail-dot water-dot"></span>
+                                <span>Lingkaran biru = <strong>Air (H₂O)</strong></span>
+                            </div>
+                            <div class="explain-detail-item">
+                                <span class="detail-dot atp-dot"></span>
+                                <span>Lingkaran ungu = <strong>ATP</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Reaction equation -->
+                        <div class="explain-equation" id="explainEquation"></div>
+                    </div>
+                </div>
+
+                <!-- ===== BOTTOM: Controls ===== -->
+                <div class="anim-controls">
+                    <button class="ctrl-btn" id="btnPrev" disabled>← Sebelumnya</button>
+
+                    <!-- Step indicators -->
+                    <div class="step-indicator">
+                        <div class="step-dot active" data-step="0"><span class="step-tooltip">Gambaran</span></div>
+                        <div class="step-dot" data-step="1"><span class="step-tooltip">Kompleks I</span></div>
+                        <div class="step-dot" data-step="2"><span class="step-tooltip">Kompleks II</span></div>
+                        <div class="step-dot" data-step="3"><span class="step-tooltip">CoQ → III</span></div>
+                        <div class="step-dot" data-step="4"><span class="step-tooltip">Cyt c → IV</span></div>
+                        <div class="step-dot" data-step="5"><span class="step-tooltip">ATP Sintase</span></div>
+                        <div class="step-dot" data-step="6"><span class="step-tooltip">Selesai</span></div>
+                    </div>
+
+                    <button class="ctrl-btn btn-next-step" id="btnNext">Langkah Berikutnya →</button>
+                </div>
+
+                <!-- Auto-play toggle -->
+                <div class="anim-autoplay">
+                    <label class="autoplay-label">
+                        <input type="checkbox" id="autoplayToggle">
+                        <span class="autoplay-switch"></span>
+                        <span>Putar Otomatis</span>
+                    </label>
+                    <div class="speed-control">
+                        <label for="speedRange">Kecepatan:</label>
+                        <input type="range" id="speedRange" min="1" max="5" value="3">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SUMMARY SECTION ============ -->
+    <section class="section summary" id="summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Ringkasan</span>
+                <h2 class="section-title">Rangkuman Rantai Transpor Elektron</h2>
+                <p class="section-subtitle">
+                    Poin-poin penting yang perlu diingat
+                </p>
+            </div>
+
+            <!-- Summary Table -->
+            <div class="summary-table-wrapper" data-animate="fade-up">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Komponen</th>
+                            <th>Fungsi</th>
+                            <th>Donor e⁻</th>
+                            <th>Akseptor e⁻</th>
+                            <th>H⁺ Dipompa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kompleks I</strong></td>
+                            <td>NADH Dehidrogenase</td>
+                            <td>NADH</td>
+                            <td>CoQ</td>
+                            <td>4 H⁺</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kompleks II</strong></td>
+                            <td>Suksinat Dehidrogenase</td>
+                            <td>FADH₂</td>
+                            <td>CoQ</td>
+                            <td>0 H⁺</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ubiquinon (CoQ)</strong></td>
+                            <td>Pembawa elektron bergerak</td>
+                            <td>Kompleks I & II</td>
+                            <td>Kompleks III</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kompleks III</strong></td>
+                            <td>Sitokrom bc₁</td>
+                            <td>CoQH₂</td>
+                            <td>Cyt c</td>
+                            <td>4 H⁺</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sitokrom c</strong></td>
+                            <td>Pembawa elektron bergerak</td>
+                            <td>Kompleks III</td>
+                            <td>Kompleks IV</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kompleks IV</strong></td>
+                            <td>Sitokrom c Oksidase</td>
+                            <td>Cyt c</td>
+                            <td>O₂ → H₂O</td>
+                            <td>2 H⁺</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>ATP Sintase</strong></td>
+                            <td>Fosforilasi Oksidatif</td>
+                            <td colspan="2">H⁺ mengalir kembali ke matriks</td>
+                            <td>~34 ATP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Key Points -->
+            <div class="key-points" data-animate="fade-up">
+                <h3>📌 Poin Penting</h3>
+                <div class="points-grid">
+                    <div class="point-card">
+                        <div class="point-number">1</div>
+                        <p>
+                            <strong>O₂ adalah akseptor elektron terakhir.</strong> 
+                            Tanpa oksigen, rantai transpor elektron berhenti, dan ATP 
+                            tidak dapat diproduksi secara aerob.
+                        </p>
+                    </div>
+                    <div class="point-card">
+                        <div class="point-number">2</div>
+                        <p>
+                            <strong>NADH menghasilkan lebih banyak ATP daripada FADH₂</strong> 
+                            karena NADH menyerahkan elektron di Kompleks I (memompa 4 H⁺), 
+                            sedangkan FADH₂ di Kompleks II (0 H⁺).
+                        </p>
+                    </div>
+                    <div class="point-card">
+                        <div class="point-number">3</div>
+                        <p>
+                            <strong>Kemiosmosis</strong> adalah proses aliran H⁺ melalui 
+                            ATP Sintase yang menghasilkan ATP. Ini ditemukan oleh 
+                            Peter Mitchell (Nobel 1978).
+                        </p>
+                    </div>
+                    <div class="point-card">
+                        <div class="point-number">4</div>
+                        <p>
+                            <strong>Produk sampingan adalah air (H₂O).</strong> 
+                            Air metabolik ini terbentuk ketika O₂ menerima elektron 
+                            dan bergabung dengan H⁺ di Kompleks IV.
+                        </p>
+                    </div>
+                    <div class="point-card">
+                        <div class="point-number">5</div>
+                        <p>
+                            <strong>Racun seperti sianida</strong> menghambat Kompleks IV, 
+                            menghentikan seluruh rantai transpor elektron dan menyebabkan 
+                            kematian sel karena kekurangan ATP.
+                        </p>
+                    </div>
+                    <div class="point-card">
+                        <div class="point-number">6</div>
+                        <p>
+                            <strong>Total ATP dari 1 glukosa:</strong> 
+                            Glikolisis (2) + Siklus Krebs (2) + ETC (~34) = <strong>~38 ATP</strong> 
+                            (atau ~36 ATP, tergantung shuttle yang digunakan).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ QUIZ SECTION ============ -->
+    <section class="section quiz-section" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Uji Pemahaman</span>
+                <h2 class="section-title">Kuis Interaktif</h2>
+                <p class="section-subtitle">
+                    Uji pemahamanmu tentang rantai transpor elektron!
+                </p>
+            </div>
+
+            <div class="quiz-container" data-animate="fade-up">
+                <!-- Progress bar -->
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar" id="quizProgressBar"></div>
+                    <span class="quiz-progress-text" id="quizProgressText">Soal 1 / 5</span>
+                </div>
+
+                <!-- Question area -->
+                <div class="quiz-question" id="quizQuestion">
+                    <h3 id="questionText"></h3>
+                </div>
+
+                <!-- Options -->
+                <div class="quiz-options" id="quizOptions">
+                    <!-- Options will be injected by JS -->
+                </div>
+
+                <!-- Feedback -->
+                <div class="quiz-feedback" id="quizFeedback">
+                    <p id="feedbackText"></p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="quiz-nav">
+                    <button class="btn btn-secondary" id="btnPrevQ" disabled>← Sebelumnya</button>
+                    <button class="btn btn-primary" id="btnNextQ">Selanjutnya →</button>
+                </div>
+
+                <!-- Result -->
+                <div class="quiz-result" id="quizResult">
+                    <div class="result-icon" id="resultIcon"></div>
+                    <h3 id="resultTitle"></h3>
+                    <p id="resultText"></p>
+                    <div class="result-score">
+                        <span class="score-number" id="scoreNumber"></span>
+                        <span class="score-label">Skor Anda</span>
+                    </div>
+                    <button class="btn btn-primary" id="btnRetry">🔄 Coba Lagi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="nav-icon">⚡</span>
+                    <span>Transpor Elektron</span>
+                </div>
+                <p class="footer-text">
+                    Website pembelajaran interaktif tentang Rantai Transpor Elektron 
+                    dalam metabolisme sel. Dibuat untuk membantu memahami konsep biologi 
+                    dengan cara yang visual dan menyenangkan.
+                </p>
+                <div class="footer-divider"></div>
+                <p class="footer-copyright">
+                    &copy; 2025 — Proyek Pembelajaran Biologi | Metabolisme Sel
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" title="Kembali ke atas">↑</button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
